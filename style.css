@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #0D0C22;
+}
+
+main{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.escribe-altura, .escribe-peso, .calc {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.calc{
+    margin: 10px;
+}
+h1{
+    font-size: 35px;
+    margin: 8px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f3f4;;
+}
+
+button {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #8773F3;
+}
+button:hover {
+    box-shadow: 0 0 4px #484758;
+}
+input:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 4px #8773F3;
+}
+input:focus{
+    background-color: #ffffff;
+    border: 0.5px solid #8773F3;
+}
+@media (max-width: 500px) {
+    body, input, button {
+        font-size: 15px;
+    } 
+    h1 {
+        font-size: 30px;
+    }
+}
